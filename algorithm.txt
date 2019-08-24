@@ -1,0 +1,38 @@
+Harmanjot Singh
+Professor Andrew Harris
+Computing II
+9 November 2018
+
+						The Perfect Pet Algorithm
+
+•Goals - The main goal of this program is to create a Virtual pet which a user can interact with. 
+
+•Input - The program will receive a lot of inputs from the user according to what they are trying to do with their virtual pet.
+
+•Output - Outputs will depend on what user have entered in the program but mostly it will be something related to virtual pet that they have created. For instance, pet’s name, age and its type.
+ 
+•Steps - class Pet{}:
+  	1.Inside this Pet class, create all the necessary variables for the program. For example, name, age and type of pet etc.
+	2.Inside the main function, instantiate a new pet which will be responsible for printing the existing pet name, age and its type.
+	3.Declare the Birthday() function for pet’s birthday and savePromt() function for if user wants to save their changes(serialize out). 
+
+public Pet():
+	1.Create a new command line scanner for the program.
+	2.Prompt the user if they want to load a saved pet.
+	3.Make a new try catch block inside the if statement which will try to open a previously saved serialized pet object. If something went wrong while opening a pet object, the catch block will tell 	the user that we cannot open a pet.
+	4.If the user doesn’t want to load an existing pet. Make a new one for them in the else part of the if else statement. 
+	5.Make a new Pet constructor, which will set the default values for pet’s age, name and type if the user didn’t give us anything. 
+	6.Create several functions for printing the pet’s name, age and its type for the user to see on the screen.
+	7.Declare setters for pet’s name, age and pet type.
+
+public void Birthday():
+	1.This Birthday() function will be responsible for prompting the user about whether their pet has had a birthday since their last visit.
+	2.If the user puts yes, add a year to the pet’s current age and print it.
+
+public void serial():
+	1.The serial() function is mainly dedicated to the serialization of the pet object which creates new output file with filename “pet.ser”.
+	2.Also let the user know that their serialized data is saved in “pet.ser”.
+
+public void savePromt():
+	1.The savePromt() function prompts the user if they want save their pet.
+	2.If not, exit them out of the program. 
